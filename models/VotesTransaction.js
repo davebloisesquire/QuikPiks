@@ -16,8 +16,10 @@ VotesTransaction.init(
       allowNull: true,
     },
     choice: {
-      type: DataTypes.STRING,
-      allowNull: true,
+      type: DataTypes.INT,
+      allowNull: false,
+      min: 1,
+      max: 4
     },
     user_id: {
       type: DataTypes.STRING,
