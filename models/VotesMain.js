@@ -15,11 +15,19 @@ VotesMain.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    options: {
+    option1: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    option2: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    option3: {
       type: DataTypes.STRING,
       allowNull: true,
     },
-    count: {
+    option4: {
       type: DataTypes.STRING,
       allowNull: true,
     },
