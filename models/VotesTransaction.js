@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const sequelize = require('../config/connections');
 
 class VotesTransaction extends Model {}
 
@@ -16,7 +16,7 @@ VotesTransaction.init(
       allowNull: true,
     },
     choice: {
-      type: DataTypes.INT,
+      type: DataTypes.INTEGER,
       allowNull: false,
       min: 1,
       max: 4
@@ -38,6 +38,9 @@ VotesTransaction.init(
       }
     },
   },
+  {
+    sequelize
+  }
 );
 
 module.exports = VotesTransaction;
