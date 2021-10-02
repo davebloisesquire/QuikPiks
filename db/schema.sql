@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS quikpik_db;
-CREATE DATABASE quikpik_db;
+DROP DATABASE IF EXISTS quikpiks_db;
+CREATE DATABASE quikpiks_db;
