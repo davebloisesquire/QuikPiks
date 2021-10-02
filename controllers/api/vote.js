@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const sequelize = require('../../config/connections');
 const { VotesMain, VotesTransaction } = require('../../models');
 
 // GET your Votes (view votes your)
@@ -19,9 +20,9 @@ router.get('/open-vote', (req, res) => {
             // Order by title in ascending order
             order: sequelize.random(),
             limit: 1,
-            where: {
-                time_to_vote: Date
-            },
+            // where: {
+            //     time_to_vote: Date
+            // },
         })
         .then((votesData) => {
             res.json(votesData);
