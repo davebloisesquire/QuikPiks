@@ -3,6 +3,9 @@
   }
   
   body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     font-family: Arial;
     background-image: linear-gradient( to bottom, #f9a828, #ececeb, #07617d, #2e383f);
   }
@@ -11,28 +14,23 @@
 
 nav {
     display: flex;
+    justify-content: flex-start;
   }
   nav header {
     color: black;
     padding-inline-end: 15%;
     text-decoration: none;
-    text-align: right;
+    text-align: left;
     font-size: 50px;
   }
   
   nav a {
     color: #13293d;
-    padding: 20px;
+    padding: 80px;
     text-decoration: none;
     text-align: right;
-    /* margin-left: 100px; */
     text-decoration: underline;
-    /* background-color: lightblue; */
   }
-
-  /* header {
-    background-color: lightblue;
-  } */
 
   .animation-area {
     background: linear-gradient( to left, #ff165d, #ff9a00,);
@@ -44,6 +42,10 @@ nav {
     background-color: lightblue;
   }
   
+  #you:hover {
+    background-color: lightblue;
+  }
+
   .btnWe {
     border: 5px solid red;
     color:black;
