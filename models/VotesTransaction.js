@@ -35,7 +35,7 @@ VotesTransaction.init({
             model: 'VotesMain',
             key: 'id'
         }
-    },
+    }
 }, {
     sequelize,
     freezeTableName: true,
