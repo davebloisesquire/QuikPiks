@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const sequelize = require('../config/connections');
 
 class Suggestion extends Model {}
 
@@ -20,6 +20,9 @@ Suggestion.init(
       allowNull: true,
     },
   },
+  {
+    sequelize
+  }
 );
 
 module.exports = Suggestion;
