@@ -9,7 +9,8 @@ document.querySelector("#link-box").addEventListener("click", (event) => {
 
         switch (id) {
             case "History":
-                sidebox.textContent = "History"
+                getHistory()
+
                 break;
             case "Preferences":
                 sidebox.textContent = "Preferences"
@@ -27,3 +28,7 @@ document.querySelector("#link-box").addEventListener("click", (event) => {
         return
     }
 })
+
+function getHistory(){
+    fetch('/api/votes/')
+}
