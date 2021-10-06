@@ -38,9 +38,10 @@ VotesMain.init({
             key: 'id'
         }
     },
-    time_to_vote: {
-        type: DataTypes.STRING,
-        allowNull: false,
+    deadline: {
+      type: DataTypes.INTEGER,
+      defaultValue: Date.now() + 900000,
+      allowNull: false
     },
 }, {
     sequelize,
