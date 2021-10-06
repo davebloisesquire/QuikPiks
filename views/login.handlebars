@@ -1,1 +1,21 @@
 <h1>Login Page</h1>
+
+<form class="p-5 col-8" id="user-form">
+  <div class="form-group">
+    <label for="username">Username or Email</label>
+    <input type="username" class="form-input" id="username" aria-describedby="usernameHelp" placeholder="Enter username" />
+    <small id="usernameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-input" id="email" aria-describedby="emailHelp" placeholder="Enter email" />
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-input" id="password" placeholder="" />
+  </div>
+  <button type="submit" class="btn btn-primary" id="submit-btn">
+    Submit
+  </button>
+</form>
