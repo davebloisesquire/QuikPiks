@@ -39,7 +39,7 @@ VotesTransaction.init({
 }, {
     sequelize,
     freezeTableName: true,
-    modelName: 'VotesTransactionsource',
+    modelName: 'VotesTransaction',
 });
 
 module.exports = VotesTransaction;
