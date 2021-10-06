@@ -34,12 +34,82 @@ body {
   height: 100vh;
 }
 
+.flex{
+  display: flex;
+}
+
+#name{
+  align-self: center;
+  font-size: 20px;
+}
+
+img {
+    height: 200px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile-pic-div{
+  height: 80px;
+  width: 80px;
+  position: right;
+  top: 50%;
+  transform: translate(0%, 0%);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid grey;
+}
+
+#photo{
+  height: 100%;
+  width: 100%;
+}
+
+#file{
+  display: none;
+}
+
+#uploadBtn{
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: wheat;
+  line-height: 30px;
+  font-family: sans-serif;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+
 a {
   color:black;
 }
 
 a:hover {
   color:teal;
+}
+
+#profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+#sidebox {
+  width: 100px;
+  background-color: clear;
+  align-self: stretch;
+}
+
+.hidden {
+  display: none;
 }
 
 
