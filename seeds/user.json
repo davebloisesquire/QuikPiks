@@ -1,0 +1,24 @@
+[
+  {
+    "username": "Danny",
+    "email": "danny@danmail.com",
+    "password": "HushPuppy28#"
+  },
+  {
+    "username": "fudgeKing90",
+    "email": "king@fudgeKing90.net",
+    "password": "LetFudgeBeTheJudge"
+  },
+  {
+    "username": "quitter22",
+    "email": "freddy@quitter.org",
+    "password": "quitactular2021!",
+    "preferences": "quitting"
+  },
+  {
+    "username": "Jones45_cool",
+    "email": "Jones45_cool@gmail.com",
+    "password": "c00lMrJ0nes!",
+    "preferences": "stuff"
+  }
+]
