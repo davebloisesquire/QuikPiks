@@ -110,6 +110,7 @@ font-family: Arial;
   margin-left: 15%;
 }
 
+<<<<<<< HEAD
 .comment {
   width: 450px;
   height: 150px;
@@ -124,6 +125,18 @@ font-family: Arial;
   /* float: right; */
 }
  
+=======
+/* input[type=text], input[type=password] {
+  width: 250px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 12px;
+} */
+
+>>>>>>> main
 button {
   display: flex;
   background-color: #04AA6D;

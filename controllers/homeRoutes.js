@@ -18,7 +18,7 @@ router.get('/home', withAuth, async (req, res) => {
         order: [['name', 'ASC']],
       });
       const users = userData.map((project) => project.get({ plain: true }));
-  
+// Homepage is meant to be distinct from "home". "homepage" is meant to be for the user-specific page. 
       res.render('homepage', {
         users,
         logged_in: req.session.logged_in,
@@ -34,8 +34,8 @@ router.get('/home', withAuth, async (req, res) => {
       res.redirect('/home');
       return;
     }
-  
-    res.render('login');
+   res.render('login');
+    //res.render('login');
   });
   
   module.exports = router;

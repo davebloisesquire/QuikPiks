@@ -57,8 +57,12 @@
     width: 250px;
     padding: 12px 20px;
     margin: 8px 0;
+<<<<<<< HEAD
     display: flex;
     flex-direction: row;
+=======
+    display: inline-block;
+>>>>>>> main
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 12px;

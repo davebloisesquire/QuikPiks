@@ -1,0 +1,26 @@
+[
+  {
+    "question": "where should I go today?",
+    "option1": "Nowhere",
+    "option2": "The pub",
+    "option3": "The zoo",
+    "user_id": 3,
+    "deadline": 10000
+  },
+  {
+    "question": "what movie should I watch?",
+    "option1": "Goonies",
+    "option2": "Heat",
+    "user_id": 2,
+    "deadline": 100000
+  },
+  {
+    "question": "Which should I choose?",
+    "option1": "Watch TV",
+    "option2": "Hang with firends",
+    "option3": "Make that sweet cash money",
+    "option4": "Make a sandwich",
+    "user_id": 1,
+    "deadline": 100000
+  }
+]
