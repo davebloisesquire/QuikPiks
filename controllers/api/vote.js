@@ -27,6 +27,11 @@ router.get('/open-vote', (req, res) => {
             //       $lte: Date.now()
             //     }
             // },
+            include: {
+              // model: VotesTransaction
+             model: VotesTransaction, attributes: ['user_id']
+            }
+            ,
         })
         .then((votesData) => {
             res.json(votesData);
@@ -42,6 +47,15 @@ router.get('/results/:vote_id', (req, res) => {
               vote_id: req.params.vote_id
           }
       }).then((results) => {
+          res.json(results);
+      })
+      .catch((error) => res.json(error))
+})
+
+// GET vote info for results
+router.get('/main/:vote_id', (req, res) => {
+  VotesTransaction.findByPk(req.params.vote_id)
+      .then((results) => {
           res.json(results);
       })
       .catch((error) => res.json(error))
@@ -91,5 +105,6 @@ router.get('/history', (req, res) => {
         })
         .catch((error) => res.json(error))
 })
+
 
 module.exports = router;
