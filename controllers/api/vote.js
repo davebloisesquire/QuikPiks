@@ -3,10 +3,10 @@ const sequelize = require('../../config/connections');
 const { VotesMain, VotesTransaction } = require('../../models');
 
 // GET your Votes (view votes your)
-router.get('/votes/:user_id', (req, res) => {
+router.get('/votes', (req, res) => {
     VotesMain.findAll({
             where: {
-                user_id: req.params.user_id
+                user_id: req.session.user.id
             }
         }).then((myVotes) => {
             res.json(myVotes);
