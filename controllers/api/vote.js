@@ -65,4 +65,31 @@ router.post('/submit', (req, res) => {
         })
 })
 
+// GET user voting history
+router.get('/history2/:user_id', (req, res) => {
+    VotesTransaction.findAll({
+            where: {
+                user_id: req.params.user_id
+            },
+            include: {
+                model: VotesMain
+            }
+        }).then((voteHistory) => {
+            res.json(voteHistory);
+        })
+        .catch((error) => res.json(error))
+})
+
+// GET user voting history
+router.get('/history', (req, res) => {
+    VotesTransaction.findAll({
+            where: {
+                user_id: req.session.user.id
+            }
+        }).then((voteHistory) => {
+            res.json(voteHistory);
+        })
+        .catch((error) => res.json(error))
+})
+
 module.exports = router;
