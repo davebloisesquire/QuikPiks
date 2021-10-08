@@ -11,7 +11,7 @@
   nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    /* justify-content: space-between; */
   }
   nav header {
     color: black;
@@ -32,44 +32,26 @@
   }
 
   h1{
-      /* flex-shrink: 3; */
-      font-size: 22px;
-      margin-left: 25px;
-
-      
+      text-transform: uppercase;
+      text-align: right;
+      /* display: grid; */
+      margin-left: 80px;
   }
-  
-  /* .animation-area {
-    background: linear-gradient( to left, #ff165d, #ff9a00,);
-    width: 100%;
-    height: 100vh;
-  } */
-    
+
+  h2{
+      text-align: center;
+  }
+
+  h3{
+      text-align: center;
+  }
+      
   form {
-    /* display: flex;
-    flex-direction: center;
-    justify-content:space-evenly; */
   font-family: Arial;
     border: 3px solid #f1f1f1;
     border-radius: 12px;
-    /* width: 70%;
-    height: 450px;
-    margin-left: 15%; */
   }
   
-  /* .comment {
-    width: 450px;
-    height: 150px;
-    padding: 12px 20px;
-    margin-right: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    border-radius: 12px;
-    float: right;
-  } */
 
   .results {
       display: flex;
@@ -107,13 +89,11 @@
   }
   
   h4{
-      text-align: center;
+      visibility: hidden;
   }
-  /* .About {
-  width: 40%;
-  height: 25%;
-  display: inline-block;
-  float: left; */
+  .About {
+  display: none;
+  }
   
   /* #facebook, #instagram, #twitter {
   display: inline-block;
@@ -144,72 +124,89 @@
     list-style-type: none;
   }
 
-  /* @media screen and (max-width: 680px) {
-      .nav a{
-        color: #13293d;
-        padding: 15px;
+  .copyR{
+      display: none;
+  }
+
+  @media screen and (min-width: 700px) {
+    * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        height: 110vh;
+        font-family: Arial;
+        background-image: linear-gradient( to bottom, #f9a828, #ececeb, #07617d, #2e383f);
+      }
+    
+      nav {
         display: flex;
-        flex-direction: column;
+        justify-content: flex-start;
+      }
+      nav header {
+        color: black;
+        padding-inline-end: 15%;
+        text-decoration: none;
+        text-align: left;
+        font-size: 50px;
+      }
+      
+      nav a {
+        color: #13293d;
+        padding: 80px;
+        text-decoration: none;
         text-align: right;
         text-decoration: underline;
-        min-width: 30px;
+      }
+
+      h1{
+        /* text-transform: uppercase; */
+        text-align: right;
+        /* display: grid; */
+        margin-left: 80px;
+    }
+  
     
-      }
-
-      nav header{
-        flex: 0 3 30%;
-
-
-      }
-      
+        
       form {
-        /* display: flex; */
-        /* flex-direction: cente; */
-        /* justify-content:space-evenly; */
-      /* font-family: Arial; */
-        /* border: 3px solid #f1f1f1; */
-        /* border-radius: 12px; */
-        /* width: 425px;
-        height: 200px; */
-        /* margin-left: 15%; */
-      }
-      
-      /* .comment { */
-        /* width: 350px;
-        height: 150px; */
-        /* display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        border: 1px solid #ccc; */
-      }
+          min-height: 50%;
+        font-family: Arial;
+        border: 3px solid #f1f1f1;
+        border-radius: 12px;
+        text-align: center;
+        padding: 75px;
+          }        
     
-      /* .results, .title{
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          margin-top: 15px;
-          margin-left: 20px; */
-      }
-        
-        .About {
-        /* width: 400px;
-        height: 150px; */
-        /* margin-left: 65px; */
-        }
+    footer { 
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly
+    }
+    
+    .About {
+      width: 40%;
+      height: 25%;
+      display: inline-block;
+      float: left;
+    }
+    
+    /* #facebook, #instagram, #twitter {
+      display: inline-block;
+      float: center;
+      justify-content: space-around;
+    } */
+    
+    #downL {
+      display: flex;
+    justify-content: space-between ;
+    float: right;
+    margin-right: 250px;
+    
+    }
+    
+    #copyright {
 
-        #downL {
-            
-            }
-            
-            /* #copyright {
-            display: flex;
-            flex-direction:row;
-            justify-content: center;
-            margin-left: 40%;
-            } */
-          
-            
-          
-        
-  } */
+    }
+    
+  }
   
