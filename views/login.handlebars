@@ -6,15 +6,15 @@
     <div class="container">
         <h1>Log-in</h1>
       <label for="Name"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="Name" required>
+      <input type="text" placeholder="Enter Username" name="Name" id= "name" required>
   
       <label for="Passw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="Passw" required>
+      <input type="password" placeholder="Enter Password" name="Passw" id= "passW" required>
 
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
-      <button type="submit">Login</button>
+      <button type="submit" id= "loginBtn">Login</button>
     </div>
   
     <div class="container">
@@ -28,14 +28,14 @@
       <hr>
   
       <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
+      <input type="text" placeholder="Enter Email" name="email" id= "newEmail" required>
 
       <label for="Uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="Uname" required>
+      <input type="text" placeholder="Enter Username" name="Uname" id= "newName" required>
 
   
       <label for="Passw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="Passw" required>
+      <input type="password" placeholder="Enter Password" name="Passw" id= "newPassW" required>
     
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -44,8 +44,10 @@
       <p>Upon creating an account you are agreeing to our <a href="#">Terms & Privacy</a>.</p>
   
       <div class="clearfix">
-        <button type="submit" class="signupbtn">Sign Up</button>
+        <button type="submit" class="signupbtn" id= "signupBtn">Sign Up</button>
       </div>
     </div>
   </form>
 </div>
+
+<script src= "/js/login.js"></script>
