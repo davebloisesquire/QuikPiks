@@ -9,6 +9,18 @@ router.get('/', async (req, res) => {
     res.render('home');
 })
 
+router.get('/vote', async (req, res) => {
+    res.render('voting');
+})
+
+router.get('/my-votes', async (req, res) => {
+    res.render('myVotes');
+})
+
+router.get('/new-vote', async (req, res) => {
+    res.render('newVote');
+})
+
 //This URL is for the user-unique homepage. withAuth is used to send the user to a login page
 //if an active user session is not identified.
 router.get('/home', withAuth, async (req, res) => {
@@ -19,7 +31,7 @@ router.get('/home', withAuth, async (req, res) => {
       }
       );
       const users = userData.map((project) => project.get({ plain: true }));
-// Homepage is meant to be distinct from "home". "homepage" is meant to be for the user-specific page. 
+// Homepage is meant to be distinct from "home". "homepage" is meant to be for the user-specific page.
       res.render('homepage', {
         users,
         logged_in: req.session.logged_in,
@@ -38,6 +50,5 @@ router.get('/home', withAuth, async (req, res) => {
    res.render('login');
     //res.render('login');
   });
-  
+
   module.exports = router;
-  
