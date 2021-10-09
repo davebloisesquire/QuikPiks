@@ -33,14 +33,14 @@ VotesMain.init({
     user_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
-        references: {
-            model: 'User',
-            key: 'id'
-        }
+        // references: {
+        //     model: 'User',
+        //     key: 'id'
+        // }
     },
     deadline: {
       type: DataTypes.INTEGER,
-      defaultValue: 900000,
+      defaultValue: Date.now,
       allowNull: false
     },
 }, {
