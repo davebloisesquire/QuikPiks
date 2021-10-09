@@ -4,6 +4,7 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
+const cookieParser = require('cookie-parser');
 
 const sequelize = require('./config/connections');
 
@@ -15,11 +16,14 @@ const PORT = process.env.PORT || 3001;
 
 const hbs = exphbs.create({ helpers });
 
+// One day in milliseconds
+const day = 1000 * 60 * 60 * 24;
+
 // Configure and link a session object with the sequelize store
 const sess = {
   secret: 'quikpik kipkiuq',
   cookie: {
-    maxAge: 3600,
+    maxAge: day,
     httpOnly: true,
     secure: false,
     sameSite: 'strict'
@@ -39,7 +43,10 @@ app.set('view engine', 'handlebars');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(__dirname + '/public'));
+//app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(cookieParser());
 
 
 app.use(routes);
