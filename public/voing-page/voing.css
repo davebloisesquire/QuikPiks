@@ -107,10 +107,12 @@ h4{
   display: none;
 }
 
-.clearfix{
+/* .clearfix{
   display: none;
+} */
+#voting-form {
+  max-width: 99%;
 }
-
 
 form {
   font-family: Arial;
@@ -131,7 +133,7 @@ form {
   border-radius: 12px;
   /* float: right; */
 }
- 
+
 button {
   display: flex;
   background-color: #04AA6D;
@@ -167,7 +169,7 @@ button:hover {
   flex-direction: column;
   justify-content: space-evenly;
 }
-    
+
 /* .container {
   padding: 16px;
     display: flex;
@@ -195,7 +197,7 @@ a:hover {
   color: red;
 }
 
-footer { 
+footer {
 display: flex;
 flex-direction: row;
 justify-content: space-evenly
@@ -242,13 +244,13 @@ ul {
   * {
       box-sizing: border-box;
     }
-    
+
     body {
       height: 110vh;
       font-family: Arial;
       background-image: linear-gradient( to bottom, #f9a828, #ececeb, #07617d, #2e383f);
     }
-  
+
     nav {
       display: flex;
       justify-content: flex-start;
@@ -260,10 +262,10 @@ ul {
       text-align: left;
       font-size: 50px;
     }
-    
+
     nav a {
       color: #13293d;
-      padding: 80px;
+      padding: 0 80px;
       text-decoration: none;
       text-align: right;
       text-decoration: underline;
@@ -276,8 +278,8 @@ ul {
       margin-left: 80px;
   }
 
-  
-      
+
+
     form {
         min-height: 50%;
       font-family: Arial;
@@ -285,35 +287,35 @@ ul {
       border-radius: 12px;
       text-align: center;
       /* padding: 75px; */
-        }        
-  
-  footer { 
+        }
+
+  footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly
   }
-  
+
   .About {
     width: 40%;
     height: 25%;
     display: inline-block;
     float: left;
   }
-  
+
   /* #facebook, #instagram, #twitter {
     display: inline-block;
     float: center;
     justify-content: space-around;
   } */
-  
+
   #downL {
     display: flex;
   justify-content: space-between ;
   float: right;
   margin-right: 250px;
-  
+
   }
-  
+
   .container {
     display: block;
     position: relative;
@@ -326,14 +328,14 @@ ul {
     -ms-user-select: none;
     user-select: none;
   }
-  
+
   /* Hide the browser's default radio button */
   .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
   }
-  
+
   /* Create a custom radio button */
   .checkmark {
     position: absolute;
@@ -344,25 +346,25 @@ ul {
     background-color: #eee;
     border-radius: 50%;
   }
-  
+
   .container:hover input ~ .checkmark {
     background-color: #ccc;
   }
-  
+
   .container input:checked ~ .checkmark {
     background-color: #2196F3;
   }
-  
+
   .checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
-  
+
   .container input:checked ~ .checkmark:after {
     display: block;
   }
-  
+
   .container .checkmark:after {
      top: 9px;
     left: 9px;
@@ -370,6 +372,5 @@ ul {
     height: 8px;
     border-radius: 50%;
     background: white;
-  }  
+  }
 }
-
