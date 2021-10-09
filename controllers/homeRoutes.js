@@ -28,7 +28,8 @@ router.get('/home', withAuth, async (req, res) => {
       const userData = await User.findAll({
         attributes: { exclude: ['password'] },
         order: [['name', 'ASC']],
-      });
+      }
+      );
       const users = userData.map((project) => project.get({ plain: true }));
 // Homepage is meant to be distinct from "home". "homepage" is meant to be for the user-specific page.
       res.render('homepage', {
@@ -43,7 +44,7 @@ router.get('/home', withAuth, async (req, res) => {
 //if an active user tries to login, sends them to their home page.
   router.get('/login', (req, res) => {
     if (req.session.logged_in) {
-      res.redirect('/home');
+      res.redirect('/');
       return;
     }
    res.render('login');
