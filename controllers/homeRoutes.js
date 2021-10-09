@@ -21,6 +21,10 @@ router.get('/new-vote', async (req, res) => {
     res.render('newVote');
 })
 
+router.get('/profile', async (req, res) => {
+    res.render('profile');
+})
+
 //This URL is for the user-unique homepage. withAuth is used to send the user to a login page
 //if an active user session is not identified.
 router.get('/home', withAuth, async (req, res) => {
