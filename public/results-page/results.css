@@ -3,16 +3,15 @@
   }
   
   body {
-    height: 110vh;
+      height: 110vh;
     font-family: Arial;
     background-image: linear-gradient( to bottom, #f9a828, #ececeb, #07617d, #2e383f);
   }
-
-
-
-nav {
+  
+  nav {
     display: flex;
-    justify-content: row;
+    flex-direction: row;
+    /* justify-content: space-between; */
   }
   nav header {
     color: black;
@@ -29,95 +28,90 @@ nav {
     text-decoration: none;
     /* text-align: right; */
     text-decoration: underline;
+    
   }
 
   h1{
-    text-transform: uppercase;
-    text-align: right;
-    /* display: grid; */
-    margin-left: 50px;
-}
+      text-transform: uppercase;
+      text-align: right;
+      /* display: grid; */
+      margin-left: 80px;
+  }
 
-h2{
-    text-align: center;
-}
+  h2{
+      text-align: center;
+  }
 
-h3{
-    text-align: center;
-}
-
-h4{
-  visibility: hidden;
-}
-
-  #we:hover {
-    background-color: lightblue;
+  h3{
+      text-align: center;
+  }
+      
+  form {
+  font-family: Arial;
+    border: 3px solid #f1f1f1;
+    border-radius: 12px;
   }
   
-  #you:hover {
-    background-color: lightblue;
+
+  .results {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
   }
-
-  .btnWe {
-    border: 5px solid red;
-    color:black;
-    text-align:center;
-    size: 100px;
-    font-size: 50px;
-    border-radius: 12px;
-    margin-top: 50px;
-
-  }
-
-  .btnYou {
-    border: 5px solid red;
-    color:black;
-    text-align: center;
-    size: 100px;
-    font-size: 50px;
-    border-radius: 12px;
-    margin-top: 50px;
-
-  }
-
-  .pikBtn{
-    display: grid;
-    justify-content: center;
-  }
-
+   
   
+  button:hover {
+    opacity: 0.8;
+  }
+    
   a {
     color:black;
   }
-
+  
   a:hover {
     color: red;
   }
-
+  
   #camera:hover {
     color: red;
   }
-
+  
   #LED:hover {
     color: red;
   }
-
+  
   #cal:hover {
     color: red;
   }
-  
+    
+  h4{
+      visibility: hidden;
+  }
   .About {
-    display: none;
+  display: none;
   }
   
   /* #facebook, #instagram, #twitter {
-    display: inline-block;
-    float: center;
-    justify-content: space-around;
+  display: inline-block;
+  float: center;
+  justify-content: space-around;
   }
    */
+  /* #downL {
+  display: flex;
+  justify-content: space-between ;
+  float: right;
+  margin-right: 250px;
+  
+  } */
+  
+  /* #copyright {
+  display: flex;
+  justify-content: center;
+  } */
 
-   ul {
+  ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,11 +121,9 @@ h4{
     list-style-type: none;
   }
 
-  /* #copyright {
-    display: flex;
-    justify-content: space-evenly;
-  } */
-  
+  .copyR{
+      display: none;
+  }
 
   @media screen and (min-width: 700px) {
     * {
@@ -168,45 +160,20 @@ h4{
         /* text-transform: uppercase; */
         text-align: right;
         /* display: grid; */
-        /* margin-left: 80px; */
-    }
-
-    h3{
-      text-align: center;
-      margin-top: 100px;
-  }
-  
-
-    .pikBtn{
-      display:flex;
-      justify-content: center;
-    }
-
-    .btnWe {
-      border: 5px solid red;
-      color:black;
-      text-align:center;
-      size: 100px;
-      font-size: 50px;
-      border-radius: 12px;
-      margin: 50px;
-     padding: 50px;
-  
+        margin-left: 80px;
     }
   
-    .btnYou {
-      border: 5px solid red;
-      color:black;
-      text-align: center;
-      size: 100px;
-      font-size: 50px;
-      border-radius: 12px;
-      margin: 50px;
-      padding: 50px;
-    }
-  
-  
-      
+    
+        
+      form {
+          min-height: 50%;
+        font-family: Arial;
+        border: 3px solid #f1f1f1;
+        border-radius: 12px;
+        text-align: center;
+        padding: 75px;
+          }        
+    
     footer { 
       display: flex;
       flex-direction: row;
@@ -226,7 +193,13 @@ h4{
       justify-content: space-around;
     } */
     
+    #downL {
+      display: flex;
+    justify-content: space-between ;
+    float: right;
+    margin-right: 250px;
     
+    }
     
   }
   
