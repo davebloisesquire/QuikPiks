@@ -3,13 +3,7 @@
   }
   
   body {
-<<<<<<< HEAD
     height: 110vh;
-=======
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
->>>>>>> main
     font-family: Arial;
     background-image: linear-gradient( to bottom, #f9a828, #ececeb, #07617d, #2e383f);
   }
@@ -18,7 +12,6 @@
 
 nav {
     display: flex;
-<<<<<<< HEAD
     justify-content: row;
   }
   nav header {
@@ -28,21 +21,10 @@ nav {
     text-decoration: none;
     text-align: left;
     font-size: 30px;
-=======
-    justify-content: flex-start;
-  }
-  nav header {
-    color: black;
-    padding-inline-end: 15%;
-    text-decoration: none;
-    text-align: left;
-    font-size: 50px;
->>>>>>> main
   }
   
   nav a {
     color: #13293d;
-<<<<<<< HEAD
     /* padding: 80px; */
     text-decoration: none;
     /* text-align: right; */
@@ -67,19 +49,6 @@ h3{
 h4{
   visibility: hidden;
 }
-=======
-    padding: 80px;
-    text-decoration: none;
-    text-align: right;
-    text-decoration: underline;
-  }
-
-  .animation-area {
-    background: linear-gradient( to left, #ff165d, #ff9a00,);
-    width: 100%;
-    height: 100vh;
-  }
->>>>>>> main
 
   #we:hover {
     background-color: lightblue;
@@ -92,28 +61,17 @@ h4{
   .btnWe {
     border: 5px solid red;
     color:black;
-<<<<<<< HEAD
     text-align:center;
     size: 100px;
     font-size: 50px;
     border-radius: 12px;
     margin-top: 50px;
-=======
-    text-align:left;
-    size: 100px;
-    font-size: 50px;
-    padding: 32px 16px;
-    border-radius: 12px;
-    margin-left: 15%;
-    float: left;
->>>>>>> main
 
   }
 
   .btnYou {
     border: 5px solid red;
     color:black;
-<<<<<<< HEAD
     text-align: center;
     size: 100px;
     font-size: 50px;
@@ -127,18 +85,6 @@ h4{
     justify-content: center;
   }
 
-=======
-    text-align: right;
-    size: 100px;
-    font-size: 50px;
-    padding: 32px 16px;
-    border-radius: 12px;
-    margin-right: 15%;
-    float:right;
-
-  }
-
->>>>>>> main
   
   a {
     color:black;
@@ -159,24 +105,9 @@ h4{
   #cal:hover {
     color: red;
   }
-<<<<<<< HEAD
   
   .About {
     display: none;
-=======
-
-  footer { 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly
-  }
-  
-  .About {
-    width: 40%;
-    height: 25%;
-    display: inline-block;
-    float: left;
->>>>>>> main
   }
   
   /* #facebook, #instagram, #twitter {
@@ -185,7 +116,6 @@ h4{
     justify-content: space-around;
   }
    */
-<<<<<<< HEAD
 
    ul {
     display: flex;
@@ -298,18 +228,5 @@ h4{
     
     
     
-=======
-  #downL {
-    display: flex;
-  justify-content: space-between ;
-  float: right;
-  margin-right: 250px;
-  
-  }
-  
-  #copyright {
-    display: flex;
-    justify-content: space-evenly;
->>>>>>> main
   }
   
