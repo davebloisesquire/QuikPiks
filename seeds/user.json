@@ -1,7 +1,7 @@
 [
   {
-    "username": "Danny",
-    "email": "danny@danmail.com",
+    "username": "Davapalooza",
+    "email": "dave@davemail.com",
     "password": "HushPuppy28#"
   },
   {
@@ -20,5 +20,29 @@
     "email": "Jones45_cool@gmail.com",
     "password": "c00lMrJ0nes!",
     "preferences": "stuff"
-  }
+  },
+  {
+    "username": "digdug56",
+    "email": "dig@dug.com",
+    "password": "diggitydoodawday",
+    "preferences": ""
+  },
+  {
+    "username": "figit1234",
+    "email": "figit1234@gmail.com",
+    "password": "789654123",
+    "preferences": ""
+  },
+  {
+    "username": "GregKinear",
+    "email": "gregkinearisgreat@compuserve",
+    "password": "gregiscool",
+    "preferences": ""
+  },
+  {
+    "username": "D_Howie",
+    "email": "D_howie@yahoo.com",
+    "password": "TrinTranTron",
+    "preferences": ""
+  },
 ]

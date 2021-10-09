@@ -84,6 +84,7 @@ router.post('/submit', (req, res) => {
 // GET user voting history
 router.get('/history2/:user_id', (req, res) => {
     VotesTransaction.findAll({
+            limit: 3,
             where: {
                 user_id: req.params.user_id
             },

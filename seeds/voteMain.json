@@ -22,5 +22,12 @@
     "option4": "Make a sandwich",
     "user_id": 1,
     "deadline": 100000
-  }
+  },
+  {
+    "question": "Which should I do tonight?",
+    "option1": "Stay in",
+    "option2": "Go out",
+    "user_id": 1,
+    "deadline": 100000
+  },
 ]
