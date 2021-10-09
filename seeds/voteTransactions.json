@@ -1,0 +1,30 @@
+[
+  {
+  	"comment": "No choice is really wrong though",
+  	"choice": 1,
+  	"user_id": 2,
+  	"vote_id": 2
+  },
+  {
+  	"choice": 2,
+  	"user_id": 3,
+  	"vote_id": 1
+  },
+  {
+  	"comment": "How come get some tacos wasn't an option!?!",
+  	"choice": 3,
+  	"user_id": 2,
+  	"vote_id": 1
+  },
+  {
+    "choice": 1,
+    "user_id": 3,
+    "vote_id": 1
+  },
+  {
+    "comment": "Never know what's best",
+    "choice": 2,
+    "user_id": 1,
+    "vote_id": 3
+  }
+]

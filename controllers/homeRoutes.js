@@ -34,8 +34,8 @@ router.get('/home', withAuth, async (req, res) => {
       res.redirect('/home');
       return;
     }
-  
-    res.render('login');
+   res.render('login');
+    //res.render('login');
   });
   
   module.exports = router;

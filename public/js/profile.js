@@ -15,7 +15,8 @@ document.querySelector("#link-box").addEventListener("click", (event) => {
                
                 break;
             case "Preferences":
-                sidebox.textContent = "Preferences"
+                getPreferences()
+                /* sidebox.textContent = "Preferences" */
                 break;
                 
 
@@ -28,12 +29,12 @@ document.querySelector("#link-box").addEventListener("click", (event) => {
 })
 
 function getHistory(){
-fetch('http://localhost:3001/api/vote/history',{method:"GET"}).then(response => response.json()).then(data => { 
-    console.log (data)
-       
+/* fetch('/api/vote/history2/2',{method:"GET"})
+.then(response => response.json())
+.then(data => { 
+    console.log (data) */
 
-
- /*   var data = [
+       let data = [
             {
               "id": 1,
               "comment": "How come get some tacos wasn't an option!?!",
@@ -77,8 +78,9 @@ fetch('http://localhost:3001/api/vote/history',{method:"GET"}).then(response => 
               }
             }
         ]
- 
-         sidebox.innerHTML = ""
+
+         
+        sidebox.innerHTML = ""
         for (let i = 0; i < data.length; i++) {
             var question = data[i].VotesMain.question
             var choicenum = `option${data[i].choice}`
@@ -89,8 +91,33 @@ fetch('http://localhost:3001/api/vote/history',{method:"GET"}).then(response => 
             choiceEl.textContent = choice
             sidebox.appendChild(questionEl)
             sidebox.appendChild(choiceEl)
-        }  */
+            
+        }  
+    }
+
+function getPreferences(){
+
+            let data = [
+           
+                { "id": 3,
+                "username": "Jones45_cool",
+                "email": "Jones45_cool@gmail.com",
+                "password": "$2b$10$rdP/UpWlrnCv3lqt6uoLlOuyJ7r.EYJC.gPWOw8LFIjIMObseQbce",
+                "preferences": "stuff"
+            }
+           
+            ]
+
+ 
+         sidebox.innerHTML = ""
+        for (let i = 0; i < data.length; i++) {
+            var preferences = data[i].preferences
+            var preferencesEl = document.createElement("h1") 
+            preferencesEl.textContent = preferences
+            sidebox.appendChild(preferencesEl)
+        }  
+       
     
  
-     })
-}
+    /*  }) */
+    }

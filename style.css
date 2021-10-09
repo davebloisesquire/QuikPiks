@@ -137,7 +137,7 @@ a:hover {
 #profile {
   display: flex;
   justify-content: space-between;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #sidebox {
@@ -153,9 +153,9 @@ a:hover {
   border-radius: 12px;
 }
 
-.hidden {
+/* .hidden {
   display: none;
-}
+} */
 
 
 footer {
