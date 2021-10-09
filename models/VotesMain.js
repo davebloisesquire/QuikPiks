@@ -40,7 +40,7 @@ VotesMain.init({
     },
     deadline: {
       type: DataTypes.INTEGER,
-      defaultValue: Date.now,
+      defaultValue: 900000,
       allowNull: false
     },
 }, {
