@@ -7,8 +7,38 @@ body {
   background-image: linear-gradient( to bottom, #f9a828, #ececeb, #07617d, #2e383f);
 }
 
+/* navbar section */
 
-.topnav-right {
+nav {
+  display: flex;
+  justify-content: first baseline;
+} 
+
+nav header {
+  color: black;
+  padding-inline-end: 15%;
+  text-decoration: none;
+  text-align: left;
+  font-size: 50px;
+}
+
+nav a {
+  color: #13293d;
+  padding: 80px;
+  text-align: right;
+  font-size: 20px;
+  text-decoration: none;
+} 
+
+#logout {
+  color: #13293d;
+  padding: 80px;
+  text-decoration: none;
+  text-align: right;
+  text-decoration: underline;
+}
+
+/*  .topnav-right {
   overflow: hidden;
   background-color: #333;
 }
@@ -26,7 +56,7 @@ body {
   background-color: #ddd;
   color: black;
 }
-
+ */
 
 .animation-area {
   background: linear-gradient( to left, #ff165d, #ff9a00,);
@@ -34,19 +64,23 @@ body {
   height: 100vh;
 }
 
+/* Profile pic section */
+
 .flex{
   display: flex;
+  padding: 16px;
 }
-
+ 
 #name{
   align-self: center;
   font-size: 20px;
+  padding: inherit;
 }
 
 img {
     height: 200px;
-}
-*{
+/* }
+*{ */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -89,8 +123,11 @@ img {
 }
 
 
+/* bottom of page section */
+
 a {
   color:black;
+
 }
 
 a:hover {
@@ -100,17 +137,25 @@ a:hover {
 #profile {
   display: flex;
   justify-content: space-between;
+  font-size: 15px;
 }
 
 #sidebox {
-  width: 100px;
+  width: 300px;
+  height: 300px;
   background-color: clear;
   align-self: stretch;
+  display:ruby-base-container;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Arial;
+  border: 3px solid #f1f1f1;
+  border-radius: 12px;
 }
 
-.hidden {
+/* .hidden {
   display: none;
-}
+} */
 
 
 footer {
