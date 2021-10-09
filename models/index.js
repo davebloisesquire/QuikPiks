@@ -5,7 +5,7 @@ const VotesTransaction = require('./VotesTransaction');
 
 User.hasMany(VotesMain, {
   foreignKey: 'user_id',
-  onDelete: 'CASCADE',
+  //onDelete: 'CASCADE',
 });
 
 User.hasMany(VotesTransaction, {
