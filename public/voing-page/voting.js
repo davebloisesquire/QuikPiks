@@ -1,7 +1,8 @@
 var currentVoteId;
 const voteArea = document.getElementById('voting-area');
+const submitBallot = document.getElementById('voting-form');
 
-const getVote = () => fetch('http://localhost:3001/api/vote/open-vote', {
+const getVote = () => fetch('/api/vote/open-vote', {
   method: 'GET',
 })
 .then((res) => res.json())
@@ -14,30 +15,30 @@ const renderVotingArea = (vote) => {
   const votingQuestion = `<h1>${vote.question}</h1>`
   //Renders the vote options
   const option1 = `<label class="container">${vote.option1}
-    <input type="radio" checked="checked" name="option1" id="option1">
+    <input type="radio" name="option1" id="option1">
     <span class="checkmark"></span>
   </label>`
 
   const option2 = `<label class="container">${vote.option2}
-    <input type="radio" checked="checked" name="option2" id="option2">
+    <input type="radio" name="option2" id="option2">
     <span class="checkmark"></span>
   </label>`
 
   const option3 = `<label class="container">${vote.option3}
-    <input type="radio" checked="checked" name="option3" id="option3">
+    <input type="radio" name="option3" id="option3">
     <span class="checkmark"></span>
   </label>`
 
   const option4 = `<label class="container">${vote.option4}
-    <input type="radio" checked="checked" name="option4" id="option4">
+    <input type="radio" name="option4" id="option4">
     <span class="checkmark"></span>
   </label>`
+
 
   // Combines the vote question and options unless they're null in which case it won't render them
   const votingArea = `${votingQuestion}${option1}${option2}${vote.option3 ? option3 : '' }${vote.option4 ? option4 : ''}`
 
-
-  voteArea.appendChild(votingArea);
+  voteArea.innerHTML = votingArea;
 }
 // Pulls new vote data and displays it
 getVote().then((response) => response.forEach( item => renderVotingArea(item) ))
@@ -57,6 +58,7 @@ const submitVote = (ballot) => {
     console.log('Successful POST request:', data);
     return data;
   })
+  .then(() => location.reload())
   .catch((error) => {
     console.error('Error in POST request:', error);
   });
@@ -75,15 +77,17 @@ function getChoice() {
   }
 }
 
-const newBallot = {
-  comment: "",
-  choice: getChoice(),
-  user_id: 1,
-  vote_id: currentVoteId,
-}
 
-// Makes the actual POST with ballot info
-postReview(newBallot)
-  .then((data) => console.log("new vote cast"));
-  .catch((err) => console.error(err));
-});
+submitBallot.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const newBallot = {
+    comment: "",
+    choice: getChoice(),
+    user_id: 1,
+    vote_id: currentVoteId,
+  }
+
+  // Makes the actual POST with ballot info
+  submitVote(newBallot)
+})

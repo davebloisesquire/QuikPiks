@@ -7,6 +7,9 @@ router.get('/votes/:user_id', (req, res) => {
     VotesMain.findAll({
             where: {
                 user_id: req.params.user_id
+            },
+            include: {
+              model: VotesTransaction
             }
         }).then((myVotes) => {
             res.json(myVotes);
@@ -30,8 +33,7 @@ router.get('/open-vote', (req, res) => {
             include: {
               // model: VotesTransaction
              model: VotesTransaction, attributes: ['user_id']
-            }
-            ,
+            },
         })
         .then((votesData) => {
             res.json(votesData);
