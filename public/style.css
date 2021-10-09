@@ -10,7 +10,10 @@
     background-image: linear-gradient( to bottom, #f9a828, #ececeb, #07617d, #2e383f);
   }
 
-
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
 
 nav {
     display: flex;
