@@ -26,8 +26,9 @@ nav a {
   color: #13293d;
   padding: 80px;
   text-align: right;
-  font-size: 20px;
-  text-decoration: none;
+  font-size: 15px;
+  text-decoration:underline;
+  margin: 500px;
 } 
 
 #logout {
@@ -141,7 +142,7 @@ a:hover {
 }
 
 #sidebox {
-  width: 300px;
+  width: 600px;
   height: 300px;
   background-color: clear;
   align-self: stretch;
@@ -151,6 +152,7 @@ a:hover {
   font-family: Arial;
   border: 3px solid #f1f1f1;
   border-radius: 12px;
+  margin: 15px;
 }
 
 /* .hidden {
