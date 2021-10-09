@@ -38,7 +38,7 @@ router.get('/home', withAuth, async (req, res) => {
 // Homepage is meant to be distinct from "home". "homepage" is meant to be for the user-specific page.
       res.render('homepage', {
         users,
-        logged_in: req.session.logged_in,
+        loggedIn: req.session.loggedIn,
       });
     } catch (err) {
       res.status(500).json(err);
@@ -47,12 +47,16 @@ router.get('/home', withAuth, async (req, res) => {
 
 //if an active user tries to login, sends them to their home page.
   router.get('/login', (req, res) => {
-    if (req.session.logged_in) {
-      res.redirect('/');
+    if (req.session.loggedIn) {
+      res.redirect('/home');
       return;
     }
    res.render('login');
     //res.render('login');
   });
+
+//myVotes 
+  
+
 
   module.exports = router;

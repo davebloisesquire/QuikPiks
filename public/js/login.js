@@ -17,7 +17,7 @@ const login = async (event) => {
   
       if (response.ok) {
           alert("You are logged in")
-        document.location.replace('/');
+        document.location.replace('/home');
       } else {
         alert('Failed to log in');
       }
