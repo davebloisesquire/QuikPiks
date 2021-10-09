@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
   }
-  
+
   body {
       display: flex;
       flex-direction: column;
@@ -26,10 +26,10 @@ nav {
     text-align: left;
     font-size: 50px;
   }
-  
+
   nav a {
     color: #13293d;
-    padding: 80px;
+    padding: 0 80px;
     text-decoration: none;
     text-align: right;
     text-decoration: underline;
@@ -44,7 +44,7 @@ nav {
   #we:hover {
     background-color: lightblue;
   }
-  
+
   #you:hover {
     background-color: lightblue;
   }
@@ -75,7 +75,7 @@ nav {
 
   }
 
-  
+
   a {
     color:black;
   }
@@ -96,9 +96,8 @@ nav {
     color: red;
   }
 
-footer { 
+footer {
   text-align: center;
-  padding: 1%;  
+  padding: 1%;
   display: inline-block;
 }
-
